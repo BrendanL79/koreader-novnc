@@ -7,7 +7,7 @@ set -x
 
 VERSION=$(cat VERSION)
 
-unset TMPDIR # othewise buildah will try to use that and it doesn't work with an NFS home
+# unset TMPDIR # othewise buildah will try to use that and it doesn't work with an NFS home
 
 # Debian architectures
 # amd64, arm32v5, arm32v7, arm64v8, i386, mips64le, ppc64le, riscv64, s390x

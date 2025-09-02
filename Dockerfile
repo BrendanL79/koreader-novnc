@@ -36,7 +36,7 @@ COPY resources/koreader-logo.svg /usr/share/novnc/app/images/
 
 ENV HOME /home/user
 
-RUN adduser user \
+RUN adduser -u 1035 user \
     && chown -R user:user $HOME
 
 # Force vnc.html to be used for novnc, to avoid having the directory listing page.
